@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import WhatsAppWidget from "./components/WhatsAppWidget";
 import Footer from "./components/Footer";
+import { BsWhatsapp } from "react-icons/bs";
 
 
 const geistSans = Geist({
@@ -33,6 +34,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <WhatsAppWidget />
+        <BsWhatsapp />
       </body>
     </html>
   );

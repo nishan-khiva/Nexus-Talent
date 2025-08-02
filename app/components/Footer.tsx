@@ -10,15 +10,7 @@ export default function Footer() {
           <span className="text-gray-400 mt-1">Empowering Your Workforce</span>
         </div>
 
-        {/* Navigation Links */}
-        <nav className="flex flex-col md:flex-row gap-4 md:gap-8 text-center md:text-left mt-6 md:mt-0">
-          <a href="/" className="hover:text-orange-400 transition">Home</a>
-          <a href="/about" className="hover:text-orange-400 transition">About</a>
-          <a href="/industries" className="hover:text-orange-400 transition">Industries</a>
-          <a href="/find-job" className="hover:text-orange-400 transition">Find Job</a>
-          <a href="/hire-talent" className="hover:text-orange-400 transition">Hire Talent</a>
-          <a href="/contact" className="hover:text-orange-400 transition">Contact</a>
-        </nav>
+       
 
         {/* Contact & Socials */}
         <div className="flex flex-col items-center md:items-end gap-2">

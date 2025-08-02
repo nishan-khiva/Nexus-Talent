@@ -3,28 +3,30 @@ import { motion } from "framer-motion";
 
 const industries = [
   {
-    title: "IT & DevOps",
+    title: "Logistics & Transportation (CDL Drivers)",
     description:
-      "We specialize in sourcing top-tier IT professionals including DevOps Engineers, Site Reliability Engineers (SREs), and Cloud Infrastructure Experts. Our talent pool is proficient in Terraform, AWS, Docker, Kubernetes, Jenkins, CI/CD pipelines, and Infrastructure as Code (IaC).",
-    image: "/Devops.jpeg",
+      "We serve the logistics industry by providing reliable and FMCSA-compliant CDL-A and CDL-B drivers for long-haul, regional, and last-mile delivery. Our staffing ensures safe, timely, and efficient transportation through verified drivers and logistics professionals.",
+    image: "/truck.png"
   },
+
   {
     title: "Cybersecurity & Cloud",
     description:
       "Our cybersecurity staffing solutions connect companies with certified professionals skilled in SOC 2, HIPAA compliance, vulnerability management, cloud security, and penetration testing. We provide Security Analysts, Cloud Security Architects, and GRC experts.",
-    image: "/Cybersecurity.jpeg",
+    image: "/Cloud.png",
   },
+
   {
-    title: "Logistics & Transportation (CDL Drivers)",
+    title: "IT & DevOps",
     description:
-      "We serve the logistics industry by providing reliable and FMCSA-compliant CDL-A and CDL-B drivers for long-haul, regional, and last-mile delivery. Our staffing ensures safe, timely, and efficient transportation through verified drivers and logistics professionals.",
-    image: "/truck.jpeg",
+      "We specialize in sourcing top-tier IT professionals including DevOps Engineers, Site Reliability Engineers (SREs), and Cloud Infrastructure Experts. Our talent pool is proficient in Terraform, AWS, Docker, Kubernetes, Jenkins, CI/CD pipelines, and Infrastructure as Code (IaC).",
+    image: "/devops.png",
   },
   {
     title: "Healthcare & Medical Staffing",
     description:
       "We deliver trusted healthcare staffing solutions for hospitals, clinics, nursing homes, and private care facilities. Our vetted pool includes RNs, CNAs, LPNs, medical admin staff, and caregivers. All undergo background checks and licensing verification.",
-    image: "/healthcare.jpeg",
+    image: "/health.png",
   },
 ];
 
@@ -48,9 +50,8 @@ export default function IndustriesPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.3 }}
             viewport={{ once: true }}
-            className={`flex flex-col-reverse md:flex-row items-center gap-10 ${
-              index % 2 === 1 ? "md:flex-row-reverse" : ""
-            }`}
+            className={`flex flex-col-reverse md:flex-row items-center gap-10 ${index % 2 === 1 ? "md:flex-row-reverse" : ""
+              }`}
           >
             {/* Content */}
             <motion.div

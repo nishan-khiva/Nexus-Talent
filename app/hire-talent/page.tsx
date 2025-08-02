@@ -27,9 +27,10 @@ export default function HireTalentPage() {
         </p>
       </motion.div>
 
-      {/* Content & Form */}
+      {/* Content & Form Section */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-        {/* Left Side: Content */}
+        
+        {/* Left Side: Vetting Content */}
         <motion.section
           className="bg-white p-8 rounded-xl shadow-lg border border-gray-100"
           initial={{ opacity: 0, x: -50 }}
@@ -62,13 +63,22 @@ export default function HireTalentPage() {
 
         {/* Right Side: Form */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <HireForm />
+          <div className="bg-white/90 backdrop-blur-md border-t-4 border-orange-500 rounded-xl shadow-xl p-8 md:p-10 transition-all duration-300 hover:shadow-2xl">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
+              Share Your Hiring Needs
+            </h2>
+            <p className="text-sm text-gray-500 mb-6 text-center">
+              Fill out the form below and we’ll get in touch within 24 hours.
+            </p>
+            <HireForm />
+          </div>
         </motion.div>
+
       </div>
     </main>
   );
